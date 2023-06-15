@@ -6,7 +6,18 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      routhem: ['Routhem', 'sans-serif'],
+      
+    },
     extend: {
+       borderWidth: {
+        '2': '2px',
+      },
+      
+      colors: {
+        pink: '#FF81E3',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

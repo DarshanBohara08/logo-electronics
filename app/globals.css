@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/tailwind.css';
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -15,8 +13,16 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+@font-face {
+  font-family: "Routhem";
+  src: url("/fonts/Routhem.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
 
 body {
+
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
