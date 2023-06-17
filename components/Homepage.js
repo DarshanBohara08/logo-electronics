@@ -14,9 +14,9 @@ const HomePage = () => {
       </div>
 
           {/* heading inside image */}
-      <div className='absolute top-[50%] transform -translate-y-1/2 text-center'>
+      <div className='absolute top-[50%] transform -translate-y-1/2 text-center '>
           <h1 
-            className='text-[60px] font-normal text-[#F903AA] w-[602px] font-routhem leading-[129px] mt-[160px]'>
+            className='text-[60px] font-semibold text-[#F903AA] w-[602px] font-routhem leading-[129px] mt-[160px]'>
             Logo Electronics
           </h1>
 
@@ -36,7 +36,7 @@ const HomePage = () => {
  
           </div>
 
-          <div className='flex items-center border-[4.7px] border-fuchsia-400 rounded-[57.93px] p-6 mt-[74px]'>
+          <div id='main' className='flex items-center border-[4.7px] rounded-[57.93px] gradient-border p-6 mt-[74px]'>
               <p className='text-[18px] text-[#FFFFFF] font-routhem ml-[45.4px] mr-[122px] tracking-widest'>
                 View All Products
               </p>

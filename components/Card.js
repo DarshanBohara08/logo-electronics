@@ -6,9 +6,10 @@ import CardItem from 'components/Carditem'
 
 
 
+
 const Card = ({ pname, imageSrc, description, price, size}) => {
   return (
-    <div className="w-[300px] h-[391px] bg-white  p-6 shadow-md border-4 border-orange-300">
+    <div id='card' className="w-[300px] h-[391px] bg-white  p-6 shadow-md border-4 gradient-border ">
     <img
         src={imageSrc}
         alt="Product Image"

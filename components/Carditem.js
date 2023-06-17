@@ -5,7 +5,8 @@ import Card from 'components/Card.js'
 
 const Carditem = () => {
   return (
-    <div className='w-ful p-20 bg-[#380D41] '>
+    <div id='card'  className='w-ful p-20 bg-[#380D41]  gradient-border '>
+      <img src='image/arrow.png' className='w-[46.97px] h-[46.97px] ' />
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
                 <div className="flex space-x-[112px] mt-[245px]">
             <Card
@@ -40,12 +41,15 @@ const Carditem = () => {
                 size="w-[141px] h-[166px] mt-[19px]  mb-[7px] rounded-lg"
                
             /> 
-
-
+ 
+                
             </div>
+            
 
         </div>
-        
+        <img src='image/Vector.png' className='w-[46.97px] h-[46.97px] absolute right-0 mr-[117px]' />
+
+
 
     </div>
   )

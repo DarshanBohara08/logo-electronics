@@ -1,0 +1,49 @@
+
+  
+    #nav .gradient-border {
+        border-width: 1px;
+        border-radius: 32px;
+        border-style: solid;
+        border-image: linear-gradient(90deg, #920AA8 2%, #E019CC 20%, #FF81E3 48%, #FC75D6 52%, #DF55F6 60%, #E822EC 71%, #E80F91 75%, #EE19D8 81.25%, #FE3873 100%);
+        border-image-slice: 1;
+        
+      }
+
+      #main .gradient-border{
+        border-width: 1px;
+        border-style: solid;
+        border-image: linear-gradient(90deg, #920AA8 2%, #E019CC 20%, #FF81E3 48%, #FC75D6 52%, #DF55F6 60%, #E822EC 71%, #E80F91 75%, #EE19D8 81.25%, #FE3873 100%);
+        border-image-slice: 1;
+        border-radius: 32px;
+
+      }
+ 
+      #card .gradient-border {
+        border: 5px solid;
+        border-image: linear-gradient(
+            90deg,
+            #a8620a 2%,
+            #e09519 20%,
+            #ffe581 48%,
+            #fcdc75 52%,
+            #f6c755 60%,
+            #eca522 71%,
+            #e8980f 75%,
+            #feb838 100%
+          );
+        border-image-slice: 1;
+      }
+      .gradient-text {
+
+        background-image: linear-gradient(90deg, #A8620A 2%, #E09519 20%, #FFE581 48%, #FCDC75 52%, #F6C755 60%, #ECA522 71%, #E8980F 75%, #FEB838 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+
+      }
+
+      
+
+      
+      
