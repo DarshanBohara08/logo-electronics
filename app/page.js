@@ -6,7 +6,7 @@ import Productitem from './components/Productitem'
 
 export default function Home() {
   return (
-    <div >
+    <div className='bg-[#380D41]' >
         <HomePage/>
         <Carditem/>
         <Productcard/>

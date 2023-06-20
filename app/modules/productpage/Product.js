@@ -62,7 +62,7 @@ const Product = () => {
 
     ];
     return (
-        <div className="flex flex-col items-center mt-8">
+        <div className="flex flex-col items-center mt-8 bg-[#380D41]">
             <div className="grid grid-cols-3 gap-20">
                 {products.map((product) => (
                     <Productitem

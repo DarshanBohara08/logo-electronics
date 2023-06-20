@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { BsArrowRightCircle } from 'react-icons/bs';
+import './home.css';
 
 
 const HomePage = () => {
@@ -12,7 +13,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className='w-screen relative flex justify-center items-center mt-1.5 overflow-hidden'>
+    <div className='w-screen relative flex justify-center items-center mt-1.5 overflow-hidden bg-[#380D41]'>
       {/* image */}
       <div className='w-full'>
         <img src='image/logo.png' alt='Logo' className='w-full h-full mt-0 object-cover' />

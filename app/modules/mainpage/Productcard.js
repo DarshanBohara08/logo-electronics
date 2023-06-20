@@ -1,6 +1,4 @@
 import React from 'react';
-;
-import Image from 'next/image'
 import Productitem from '@/app/components/Productitem';
 
 
@@ -45,8 +43,9 @@ const Product = () => {
     ];
 
     return (
-        <div className="flex flex-col items-center mt-8">
-            <div className="grid grid-cols-3 gap-20">
+        <div className="flex flex-col bg-[] items-center mt-8">
+            <h1 className="text-[60px] font-routhem text-[#F903AA] font-bold mt-[434px] ">Products</h1>
+            <div className="grid grid-cols-3 gap-20 ">
                 {products.map((product) => (
                     <Productitem
                         key={product.id}
@@ -57,6 +56,7 @@ const Product = () => {
                 ))}
             </div>
         </div>
-    )
-}
+    );
+};
+
 export default Product;

@@ -5,7 +5,7 @@ import Head from 'next/head';
 const Footer = () => {
   return (
 
-    <div>
+    <div className='bg-[#380D41] mt-0'>
 
       {/* background image */}
       <div

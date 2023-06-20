@@ -6,7 +6,7 @@ import { BsArrowRightCircle } from 'react-icons/bs'
 
 const Productitem = () => {
     return (
-        <div className="bg-white rounded-[36.42px] mt-[160px] shadow-md p-4 w-[397px] h-[542px]">
+        <div className="bg-white rounded-[36.42px] mt-[160px] shadow-md p-4 w-[397px]  bg-[#380D41] h-[542px]">
             <div id='rubi' className="flex mt-[32px] mitems-center">
                 <p 
                     className='mr-[189px] ml-[25px] justify-start uppercase  text-[21.8539px] font-normal leading-[33px] gradient-text'>
