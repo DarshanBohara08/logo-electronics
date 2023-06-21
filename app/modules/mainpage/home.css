@@ -18,20 +18,26 @@
     border-image: linear-gradient(90deg, #920AA8 2%, #E019CC 20%, #FF81E3 48%, #FC75D6 52%, #DF55F6 60%, #E822EC 71%, #E80F91 75%, #EE19D8 81.25%, #FE3873 100%);
    
   }
-  #main .logo-letter {
+  .logo-letter {
     display: inline-block;
     opacity: 0;
-    animation: letterAnimation 1s ease-in forwards;
+    animation: typewriterAnimation 2s  ease-in forwards;
   }
   
-  @keyframes letterAnimation {
+  @keyframes typewriterAnimation {
     0% {
       opacity: 0;
-      transform: translateY(100%);
+    }
+    5% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 1;
     }
     100% {
       opacity: 1;
-      transform: translateY(0);
     }
   }
+  
+  
   

@@ -43,7 +43,7 @@ const Product = () => {
     ];
 
     return (
-        <div className="flex flex-col bg-[] items-center mt-8">
+        <div className="flex flex-col bg-[] items-center mt-8 pb-12">
             <h1 className="text-[60px] font-routhem text-[#F903AA] font-bold mt-[434px] ">Products</h1>
             <div className="grid grid-cols-3 gap-20 ">
                 {products.map((product) => (

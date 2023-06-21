@@ -2,7 +2,7 @@
 import React from 'react'
 import Dropdownbutton from '@/app/components/Dropdownbutton'
 import Product from './Product'
-import './product.css'
+import './product.css';
 
 
 const Productcomp = () => {

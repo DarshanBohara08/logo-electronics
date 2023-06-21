@@ -8,23 +8,56 @@
         
       }
 
-      
-      
       #card .gradient-border {
         border: 5px solid;
         border-image: linear-gradient(
-            90deg,
-            #a8620a 2%,
-            #e09519 20%,
-            #ffe581 48%,
-            #fcdc75 52%,
-            #f6c755 60%,
-            #eca522 71%,
-            #e8980f 75%,
-            #feb838 100%
-          );
+          90deg,
+          #a8620a 2%,
+          #e09519 20%,
+          #ffe581 48%,
+          #fcdc75 52%,
+          #f6c755 60%,
+          #eca522 71%,
+          #e8980f 75%,
+          #feb838 100%
+        );
         border-image-slice: 1;
       }
+       
+      @keyframes slideAnimation {
+        0% {
+          transform: translateX(200%);
+        }
+        50% {
+          transform: translateX(-5%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+      
+      #card .gradient-border:nth-child(1) {
+        animation: slideAnimation 2s infinite;
+        animation-delay: 0s; /* Delay for the first card */
+      }
+      
+      #card .gradient-border:nth-child(2) {
+        animation: slideAnimation 2s infinite;
+        animation-delay: 0.2s; /* Delay for the second card */
+      }
+      
+      #card .gradient-border:nth-child(3) {
+        animation: slideAnimation 2s infinite;
+        animation-delay: 0.4s; /* Delay for the third card */
+      }
+      
+      #card .gradient-border:nth-child(4) {
+        animation: slideAnimation 2s infinite;
+        animation-delay: 0.6s; /* Delay for the fourth card */
+      }
+      
+      
+      
       #rubi .gradient-text {
 
         background-image: linear-gradient(90deg, #A8620A 2%, #E09519 20%, #FFE581 48%, #FCDC75 52%, #F6C755 60%, #ECA522 71%, #E8980F 75%, #FEB838 100%);
@@ -34,14 +67,7 @@
 
 
       }
-      #links .gradient-text{
-        background: linear-gradient(90deg, #920AA8 2%, #E019CC 20%, #FF81E3 48%, #FC75D6 52%, #DF55F6 60%, #E822EC 71%, #E80F91 75%, #EE19D8 81.25%, #FE3873 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      -webkit-text-fill-color: transparent;
-
-      }
+      
       #product button {
         background-color: transparent;
         background-image: linear-gradient(90deg, transparent 50%, #920AA8 2%, #E019CC 20%, #FF81E3 48%, #FC75D6 52%, #DF55F6 60%, #E822EC 71%, #E80F91 75%, #EE19D8 81.25%, #FE3873 100%);
@@ -53,19 +79,51 @@
       #product button:hover {
         background-position: 0% 50%;
       }
-      #dropdown .gradient-text {
+      .select-dropdown {
+        background-color: white;
         background-image: linear-gradient(90deg, #920AA8 2%, #E019CC 20%, #FF81E3 48%, #FC75D6 52%, #DF55F6 60%, #E822EC 71%, #E80F91 75%, #EE19D8 81.25%, #FE3873 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
+        color: white;
       }
       
+      .select-dropdown option {
+        background-color: white;
+        background-image: linear-gradient(90deg, #920AA8 2%, #E019CC 20%, #FF81E3 48%, #FC75D6 52%, #DF55F6 60%, #E822EC 71%, #E80F91 75%, #EE19D8 81.25%, #FE3873 100%);
+        color: white;
+      }
+      @keyframes cardAnimation {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(-100%);
+        }
+        51% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
       
+      .card {
+        animation-name: cardAnimation;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
       
-      
-      
-      
-  
-      
-      
+      #detail-card .border-gold {
+        border: 5px solid;
+        border-image: linear-gradient(
+            90deg,
+            #a8620a 2%,
+            #e09519 20%,
+            #ffe581 48%,
+            #fcdc75 52%,
+            #f6c755 60%,
+            #eca522 71%,
+            #e8980f 75%,
+            #feb838 100%
+          )
+          1;
+      }

@@ -7,11 +7,11 @@ import image from 'next/image'
 const Nav = () => {
     return (
 
-        <div className='flex justify-between items-center overflow-hidden '  >
+        <div className='flex justify-between items-center overflow-hidden bg-[#380D41]'  >
 
             <div 
                 style={{ boxShadow: '0px 6px 4px rgba(255, 255, 255, 0.25)' }}
-                className='w-full h-[148px] flex  justify-between  '
+                className='w-full h-[148px] flex  justify-between shadow-xl '
             >
                 {/* logo */}
                 <img src='image/navlogo.png' className='w-[139px] h-[64px] mt-[52px] ml-[375px]'></img>
