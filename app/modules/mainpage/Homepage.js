@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import './home.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 const HomePage = () => {
