@@ -2,7 +2,7 @@
     background-color: transparent;
     background-image: linear-gradient(to left, transparent 50%, #920AA8 2%, #E019CC 20%, #FF81E3 48%, #FC75D6 52%, #DF55F6 60%, #E822EC 71%, #E80F91 75%, #EE19D8 81.25%, #FE3873 100%);
     background-size: 200% auto;
-    background-position: 100% 50%;
+    background-position: 100% ;
    
   }
   #main .text-wrapper{
@@ -12,11 +12,11 @@
     font-weight: 400;
   }
   #main button:hover {
-    background-position: 0% 50%;
+    background-position: 0% ;
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  #main button.gradient-border {
+  #main button .gradient-border {
     border-width: 5px;
   
     border-image: linear-gradient(90deg, #920AA8 2%, #E019CC 20%, #FF81E3 48%, #FC75D6 52%, #DF55F6 60%, #E822EC 71%, #E80F91 75%, #EE19D8 81.25%, #FE3873 100%);

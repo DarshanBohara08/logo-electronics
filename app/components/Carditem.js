@@ -75,7 +75,7 @@ const CardItem = () => {
               description={card.description}
               price={card.price}
               size={card.size}
-              animationDelay={`${index * 0.2}s`}
+              
             />
           ))}
         </div>

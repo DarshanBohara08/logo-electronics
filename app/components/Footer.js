@@ -70,8 +70,6 @@ const Footer = () => {
       </a>
       </div>
 
-     
-
       <div className="text-center mt-8">
         <p className="p-[39px] font-semibold">COPYRIGHT 2021 lOGO ALL RIGHT RESERVED</p>
       </div>
