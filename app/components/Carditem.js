@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Card from './Card';
 import './card.css';
+import Image from 'next/image'
 
 const CardItem = () => {
   
@@ -22,6 +23,7 @@ const CardItem = () => {
       return updatedCards;
     });
   };
+  
   const [cards, setCards] = useState([
     {
       pname: 'Apple',
@@ -55,9 +57,11 @@ const CardItem = () => {
 
   return (
     <div id='card' className='w-full p-20 bg-[#380D41] gradient-border overflow-hidden'>
-      <img
-        src='image/arrow.png'
-        className='w-[46.97px] h-[46.97px] cursor-pointer'
+      <Image
+        src='/image/arrow.png'
+        className=' cursor-pointer'
+        width={46.97} 
+        height={46.97} 
         onClick={handleLeftArrowClick}
       />
 
@@ -77,9 +81,11 @@ const CardItem = () => {
         </div>
       </div>
 
-      <img
-        src='image/Vector.png'
-        className='w-[46.97px] h-[46.97px] absolute right-0 mr-[117px] cursor-pointer'
+      <Image 
+        src='/image/Vector.png'
+        className='absolute right-0 mr-[117px] cursor-pointer'
+        width={46.97} 
+        height={46.97} 
         onClick={handleRightArrowClick}
       />
     </div>

@@ -16,11 +16,8 @@ const HomePage = () => {
   return (
     <div className='w-screen relative flex justify-center items-center mt-1.5 overflow-hidden bg-[#380D41]'>
       {/* image */}
-      <img
-                src="/image/logo.png"
-                alt=""
-                className="filter  h-3/4 w-full object-cover"
-            />
+      <Image src='/image/logo.png ' alt='homepage image' width={1920} height={840} />
+      
 
       {/* heading inside image */}
       <div id='main' className='absolute mt-[160px] transform -translate-y-1/2 text-center'>

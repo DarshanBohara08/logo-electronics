@@ -3,7 +3,7 @@ import React from 'react';
 import './footer.css';
 import { BsFacebook, BsInstagram,BsYoutube } from 'react-icons/bs';
 import { AiFillTwitterCircle,AiFillYoutube } from 'react-icons/ai';
-
+import Image from 'next/image'
 
 const scrollToTop = () => {
   window.scrollTo({
@@ -21,7 +21,7 @@ const Footer = () => {
 
             <div className="left-side">
               <div className="footer-logo">
-                <img src="/image/navlogo.png" alt="Logo" className="w-[139px] h-[64px] leading-[63.98px] ml-[35.16px]" />
+                <Image src='/image/navlogo.png '  alt="Logo" width={139} height={64}   className='leading-[63.98px] ml-[35.16px]' />
                 <p className="font-regular text-lg ml-4 w-[412.8px] h-[135px] mt-[35.16px]">
                   LOGO is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
                 </p>
@@ -60,15 +60,17 @@ const Footer = () => {
         </div>
 
         <a href="#" onClick={scrollToTop} className="cursor-pointer">
-      <img
+      <Image
         src="/image/rocket.png"
         alt="Scroll to top"
-        className="w-[108px] h-[184px] right-0 absolute top-0"
+        className="right-0 absolute top-0"
+        width={108}
+        height={184}
       />
       </a>
       </div>
 
-      <img src="/mask.png" className='absolute top-0 left-0 w-full h-full object-cover' style={{ zIndex: -1 }} />
+     
 
       <div className="text-center mt-8">
         <p className="p-[39px] font-semibold">COPYRIGHT 2021 lOGO ALL RIGHT RESERVED</p>
