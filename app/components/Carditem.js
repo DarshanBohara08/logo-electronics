@@ -4,6 +4,24 @@ import Card from './Card';
 import './card.css';
 
 const CardItem = () => {
+  
+  const handleLeftArrowClick = () => {
+    setCards((prevCards) => {
+      const updatedCards = [...prevCards];
+      const cardToMove = updatedCards.pop();
+      updatedCards.unshift(cardToMove);
+      return updatedCards;
+    });
+  };
+
+  const handleRightArrowClick = () => {
+    setCards((prevCards) => {
+      const updatedCards = [...prevCards];
+      const cardToMove = updatedCards.shift();
+      updatedCards.push(cardToMove);
+      return updatedCards;
+    });
+  };
   const [cards, setCards] = useState([
     {
       pname: 'Apple',
@@ -34,24 +52,6 @@ const CardItem = () => {
       size: 'w-[141px] h-[166px] mt-[19px] mb-[7px] rounded-lg',
     },
   ]);
-
-  const handleLeftArrowClick = () => {
-    setCards((prevCards) => {
-      const updatedCards = [...prevCards];
-      const cardToMove = updatedCards.pop();
-      updatedCards.unshift(cardToMove);
-      return updatedCards;
-    });
-  };
-
-  const handleRightArrowClick = () => {
-    setCards((prevCards) => {
-      const updatedCards = [...prevCards];
-      const cardToMove = updatedCards.shift();
-      updatedCards.push(cardToMove);
-      return updatedCards;
-    });
-  };
 
   return (
     <div id='card' className='w-full p-20 bg-[#380D41] gradient-border overflow-hidden'>

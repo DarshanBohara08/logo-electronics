@@ -1,12 +1,16 @@
 #main button {
-        
     background-color: transparent;
     background-image: linear-gradient(to left, transparent 50%, #920AA8 2%, #E019CC 20%, #FF81E3 48%, #FC75D6 52%, #DF55F6 60%, #E822EC 71%, #E80F91 75%, #EE19D8 81.25%, #FE3873 100%);
     background-size: 200% auto;
     background-position: 100% 50%;
    
   }
-  
+  #main .text-wrapper{
+    -webkit-text-stroke: 1px #e2e53c;
+    color: #f903aa;
+    line-height:129px;
+    font-weight: 400;
+  }
   #main button:hover {
     background-position: 0% 50%;
     transition-duration: 300ms;
@@ -39,5 +43,16 @@
     }
   }
   
-  
-  
+#rubi .text-wrapper {
+    -webkit-text-stroke: 1px #e2e53c;
+    color: #f903aa;
+    font-size: 60px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 129px;
+    text-align: center;
+    text-shadow: 8px 22px 4px #00000040;
+    top: 0;
+;
+}

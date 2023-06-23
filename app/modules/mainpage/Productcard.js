@@ -39,8 +39,8 @@ const Product = () => {
   };
 
   return (
-    <div className="flex flex-col items-center mt-8">
-          <h1 className="text-[60px] font-routhem text-[#F903AA] font-bold mt-[434px] mb-12  ">Products</h1>
+    <div id='rubi' className="flex flex-col items-center mt-8">
+          <h1 className="text-[60px] font-routhem font-bold mt-[434px] mb-12 text-wrapper">Products</h1>
       <div className="grid grid-cols-3 gap-20">
         {products.length > 0 ? (
           products.map((product) => (
@@ -48,7 +48,7 @@ const Product = () => {
               key={product.id}
               className="bg-white rounded-[36px] shadow-md p-4 w-[397px] h-[542px] mb-40"
             >
-              <div className="absolute font-medium text-[21px] mt-4 ml-4 gradient-text">
+              <div  className="absolute font-medium text-[21px] mt-4 ml-4 gradient-text">
                 <p>{product.brand}</p>
               </div>
 

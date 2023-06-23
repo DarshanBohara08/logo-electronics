@@ -25,11 +25,11 @@ const ProductDetails = ({ productId }) => {
   if (!product) {
     return <div>Loading...</div>;
   }
+
   const thumbnails = Array(4).fill(product.thumbnail);
 
-
   return (
-    <div id='detail-card' className="relative bg-[#380D41]">
+    <div id='prod-detail' className="relative bg-[#380D41]">
       
             <img src="/image/Detail.png" alt=" Product details" className='w-full' />
             <div className="absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
@@ -38,9 +38,10 @@ const ProductDetails = ({ productId }) => {
             <div className="flex items-center justify-center mt-[98px]">
                 <h2 className="absolute left-1/2 font-normal text-4xl text-white  mt-[400px] font-routhem tracking-widest transform -translate-x-1/2">{product.title}</h2>
             </div>
-            <div className="bg-white rounded-lg shadow-md p-6 mt-[300px] w-[1138px] h-[436px] ml-[490px]">
+            <div className="flex justify-center items-center ">
+            <div className="bg-white rounded-lg shadow-md p-6 mt-[300px] w-[1138px] h-[436px]  gradient-border">
                 <div className="flex">
-                    <div>
+                    <div className='gradient-border'>
                         <img src={product.thumbnail} alt={product.title} className="w-[377px] h-[375px]" />
                     </div>
                     <div className="w-2/3 pl-6">
@@ -53,15 +54,16 @@ const ProductDetails = ({ productId }) => {
                             </span>
                         </div>
                         <p className="text-gray-600 mb-4 text-[16px] leading-[24px]">{product.description}</p>
-                        <p className="text-[25px] mb-[10px]">Price: Rs {product.price}</p>
-                        <p className="text-[25px]">Discount: {product.discountPercentage}%</p>
+                        <p className="text-gray-600  text-[25px] mb-[10px]">Price: Rs {product.price}</p>
+                        <p className="text-gray-600  text-[25px]">Discount: {product.discountPercentage}%</p>
                     </div>
                 </div>
             </div>
-             <div className="mt-[119px] ml-[119px]">
+            </div>
+             <div className="mt-[119px] flex justify-center items-center">
              <Detailcard thumbnails={thumbnails} />
             </div> 
-            <div className="flex mt-[118px] mb-60 ml-[49%] gap-[39px] font-semibol text-white">
+            <div className="flex mt-[118px] justify-center gap-[39px] font-semibol text-white">
                 <BsArrowLeftCircle size={47} />
                 <BsArrowRightCircle size={47} />
             </div>

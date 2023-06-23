@@ -16,3 +16,8 @@
 
 
   }
+  .text-wrapper{
+    -webkit-text-stroke: 1px #e2e53c;
+    color: #f903aa;
+    font-weight: 400;
+  }
