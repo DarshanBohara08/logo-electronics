@@ -11,7 +11,7 @@ const Nav = () => {
             <div style={{ boxShadow: '0px 6px 4px rgba(255, 255, 255, 0.25)' }} className='w-full h-[148px] flex justify-between shadow-xl'>
                 {/* logo */}
                 <div className='leading-[63.98px] ml-[35.16px] '>
-                <Image src='/assets/image/navlogo.png '  alt="Logo" width={200} height={64}   className='leading-[63.98px] ml-[35.16px] mt-8' />
+                <Image src='/assets/images/navlogo.png '  alt="Logo" width={200} height={64}   className='leading-[63.98px] ml-[35.16px] mt-8' />
                 </div>
                 
                 {/* nav contents */}
