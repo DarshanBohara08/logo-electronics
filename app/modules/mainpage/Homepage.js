@@ -38,7 +38,7 @@ const HomePage = () => {
         <div className='flex justify-center items-center'>
           {/* horizontal lines */}
           <div className='flex-grow h-2 w-16 bg-gradient-to-r from-[#A8620A] via-[#E09519] to-[#FEB838] my-1 rounded-full'></div>
-          <p className='text-[20px] mx-4 font-routhem uppercase tracking-widest'>
+          <p className='text-[20px] mx-4 font-routhem uppercase text-white tracking-widest'>
             The techies you love
           </p>
           {/* horizontal lines */}
