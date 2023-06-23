@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Dropdownbutton from '@/app/components/Dropdownbutton'
-import Product from './Product'
+import Product from './Productpg'
 import './product.css';
 
 
@@ -20,7 +20,7 @@ const Productcomp = () => {
                 <h1 className='text-[32px] font-semibold '>{'>>'} All Products</h1>
                 <Dropdownbutton />
             </div>
-            <Product />
+            <Product/>
 
         </div>
     )

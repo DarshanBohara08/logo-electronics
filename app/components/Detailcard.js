@@ -1,25 +1,16 @@
 import React from 'react';
-import "./card.css"
-import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
+import './card.css'
 
-const DetailCard = () => {
-    return (
-        <div id='detail-card' className="flex justify-center gap-14 ">
-            <div className="w-[300px] h-[391px] rounded-lg bg-white border-gold">
-                <img src="image/headphone.png" alt="" className="w-full h-full" />
-            </div>
-            <div className="w-[300px] h-[391px] rounded-lg bg-white ml-4 border-gold">
-                <img src="image/headphone.png" alt="" className="w-full h-full" />
-            </div>
-            <div className="w-[300px] h-[391px] rounded-lg bg-white ml-4 border-gold">
-                <img src="image/headphone.png" alt="" className="w-full h-full" />
-            </div>
-            <div className="w-[300px] h-[391px] rounded-lg bg-white ml-4 border-gold">
-                <img src="image/headphone.png" alt="" className="w-full h-full" />
-            </div>
-
+const DetailCard = ({ thumbnails }) => {
+  return (
+    <div id='detail-card' className="flex justify-center gap-20 bg-[#380D41]">
+      {thumbnails.map((thumbnail, index) => (
+        <div key={index} className="w-[300px] h-[391px] rounded-lg bg-white gradient-border">
+          <img src={thumbnail} alt="" className="w-[250px] h-[250px] mt-[50px] ml-[25px]" />
         </div>
-    );
+      ))}
+    </div>
+  );
 };
 
 export default DetailCard;

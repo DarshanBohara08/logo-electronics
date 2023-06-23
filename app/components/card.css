@@ -56,17 +56,7 @@
         animation-delay: 0.6s; /* Delay for the fourth card */
       }
       
-      
-      
-      #rubi .gradient-text {
-
-        background-image: linear-gradient(90deg, #A8620A 2%, #E09519 20%, #FFE581 48%, #FCDC75 52%, #F6C755 60%, #ECA522 71%, #E8980F 75%, #FEB838 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-
-
-      }
+    
       
       #product button {
         background-color: transparent;
@@ -79,6 +69,7 @@
       #product button:hover {
         background-position: 0% 50%;
       }
+
       .select-dropdown {
         background-color: white;
         background-image: linear-gradient(90deg, #920AA8 2%, #E019CC 20%, #FF81E3 48%, #FC75D6 52%, #DF55F6 60%, #E822EC 71%, #E80F91 75%, #EE19D8 81.25%, #FE3873 100%);
@@ -93,15 +84,23 @@
       @keyframes cardAnimation {
         0% {
           transform: translateX(0);
+          order: 1;
+        }
+        25% {
+          transform: translateX(-100%);
+          order: 4;
         }
         50% {
           transform: translateX(-100%);
+          order: 3;
         }
-        51% {
-          transform: translateX(100%);
+        75% {
+          transform: translateX(-100%);
+          order: 2;
         }
         100% {
           transform: translateX(0);
+          order: 1;
         }
       }
       
@@ -112,7 +111,8 @@
         animation-timing-function: linear;
       }
       
-      #detail-card .border-gold {
+      
+      #detail-card .gradient-border {
         border: 5px solid;
         border-image: linear-gradient(
             90deg,

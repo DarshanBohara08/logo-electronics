@@ -1,89 +1,77 @@
 /* footer.css */
 
 .footer-wrapper {
-    position: relative;
-    background-image: url('/image/footer.png'), url('/image/mask.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 900px;
-    display: flex;
-    align-items: center;
-  }
-  .mask-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
-    z-index: 1;
-  }
+  position: relative;
+  background-image: url('/image/footer.png'), url('/image/mask.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 900px;
+  display: flex;
+  align-items: center;
+}
 
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-  }
-  
-  .footer-content .left-side {
-    display: flex;
-    align-items: center;
-  }
-  
-  .footer-content .right-side {
-    display: flex;
-    align-items: center;
-  }
+.mask-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
 
-  .footer-content .social-media-icons {
-    display: flex;
-    align-items: center;
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
 
-  }
-  .social-media-icons h1 {
-    font-weight: bold;
-    margin-right: 10px;
-    font-size: 3xl;
-    background-image: url('/image/follow.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    padding: 10px;
-    text-transform: uppercase;
-  }
-  
-  .social-media-icons .social-icon:hover {
-    color: #fff;
-  }
-  
-  .social-media-icons .social-icon:hover .fab {
-    filter: grayscale(0%);
-  }
-  
-  .facebook-icon:hover .fab.fa-facebook {
-    color: #3b5998;
-  }
-  
-  .twitter-icon:hover .fab.fa-twitter {
-    color: #1da1f2;
-  }
-  
-  .instagram-icon:hover .fab.fa-instagram {
-    color: #c13584;
-  }
-  
+.footer-content .left-side {
+  display: flex;
+  align-items: center;
+}
 
-  #links .gradient-text{
-        background: linear-gradient(90deg, #920AA8 2%, #E019CC 20%, #FF81E3 48%, #FC75D6 52%, #DF55F6 60%, #E822EC 71%, #E80F91 75%, #EE19D8 81.25%, #FE3873 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      -webkit-text-fill-color: transparent;
+.footer-content .right-side {
+  display: flex;
+  align-items: center;
+}
 
-      }
-  
+.footer-content .social-media-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-media-icons h1 {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 3xl;
+  background-image: url('/image/follow.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+#links .gradient-text {
+  background: linear-gradient(
+    90deg,
+    #920aa8 2%,
+    #e019cc 20%,
+    #ff81e3 48%,
+    #fc75d6 52%,
+    #df55f6 60%,
+    #e822ec 71%,
+    #e80f91 75%,
+    #ee19d8 81.25%,
+    #fe3873 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

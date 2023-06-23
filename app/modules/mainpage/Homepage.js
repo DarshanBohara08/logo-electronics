@@ -1,6 +1,5 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import './home.css';
 
@@ -30,7 +29,6 @@ const HomePage = () => {
                   className='logo-letter'
                   style={{
                     animationDelay: `${index * 0.4}s`,
-                    
                   }}
                 >
                   {letter}
