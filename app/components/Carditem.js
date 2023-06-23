@@ -59,6 +59,7 @@ const CardItem = () => {
     <div id='card' className='w-full p-20 bg-[#380D41] gradient-border overflow-hidden'>
       <Image
         src='/image/arrow.png'
+        loading='lazy'
         className=' cursor-pointer'
         width={46.97} 
         height={46.97} 
