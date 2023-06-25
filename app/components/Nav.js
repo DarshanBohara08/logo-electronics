@@ -12,7 +12,7 @@ const Nav = () => {
         {/* logo */}
         <div className="leading-[63.98px] ml-[35.16px] ">
           <Image
-            src="/assets/images/navlogo.png"
+            src="/assets/image/navlogo.png"
             alt="Logo"
             width={200}
             height={64}
