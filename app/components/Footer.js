@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="left-side">
             <div className="footer-logo">
               <Image
-                src="/assets/image/navlogo.png "
+                src="/assets/image/navlogo.png"
                 alt="Logo"
                 width={139}
                 height={64}

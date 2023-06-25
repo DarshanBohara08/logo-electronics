@@ -16,7 +16,7 @@ const HomePage = () => {
     <div className="w-screen relative flex justify-center items-center mt-1.5 overflow-hidden bg-[#380D41]">
       {/* image */}
       <Image
-        src="/assets/image/logo.png "
+        src="/assets/image/logo.png"
         alt="homepage image"
         width={1920}
         height={840}
